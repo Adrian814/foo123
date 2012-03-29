@@ -1,0 +1,227 @@
+/* 
+    Document   : web_tech.css
+    Created on : Oct 26, 2009, 11:15:02 AM
+    Author     : Adrian Siuda, Tobias Sennhauser
+    Description: The CSS file of the project website.
+        
+*/
+
+
+
+body {
+    text-align: center;
+    font-family:helvetica;
+}
+
+/* contains everything */
+#all {
+    /*position:   absolute;
+    left:       40px; */
+    margin:         0 auto;
+    text-align:     left;
+    width:          1000px;
+    height:100%; 
+/*    border-style:groove;
+    border-width:4px;
+    border-color:black; /*#B40404; */ 
+    padding:40px 25px 25px 25px;
+}
+
+/* navigation bar */
+#navigation {
+    position:   relative;
+/*    left:       40px; */
+    width:      1000px;
+    height:     85px;
+    border-style: none none dashed none;
+    border-width: thin;
+}
+
+#navigation_logo {
+    position:   relative;
+    left:       5px;
+    width:      67px;
+    height:     67px;
+    border-style:none;
+}
+
+#navigation_logo2 {
+    position:   relative;
+    left:       5px;
+    width:      67px;
+    height:     67px;
+    border-style:none;
+    float: right;
+}
+
+/* demonstrare */
+#navigation_title {
+    position:   relative;
+    width:      80px;
+    height:     20px;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-size:  14px;
+    font-weight:bold;
+    text-align: center;
+
+}
+
+/* demonstrare rechts */
+#navigation_title2 {
+    position:   relative;
+    width:      80px;
+    height:     20px;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-size:  14px;
+    font-weight:bold;
+    text-align: center;
+
+}
+
+#navigation_nav {
+    position: absolute;
+    top:        60px;
+    left:       120px;
+    height:     20px;
+    width:      600px;
+    
+}
+
+#navigation_login {
+    position:   absolute;
+    top:5px;
+    left:       910px;
+    width:      70px;
+    height:     70px;
+    text-align: right;
+}
+
+#body {
+    position:   relative;
+    margin:     0 auto;
+    text-align: left;
+    width:      1000px;
+    height:auto;
+}
+
+#content {
+    position:   absolute;
+    width:      680px;
+/*    left:       40px; */
+}
+
+#calendar {
+    position:   relative;
+    margin-top: 20px;
+    left:       705px;
+    width:      260px;
+    height:     260px;
+}
+
+#settings {
+    font-weight:bold;
+    padding:5px;
+    padding-right:20px;
+}
+
+/* links */
+a.nav:link{
+    font-weight:bold;
+    color:#000000;
+    text-decoration:none;
+}
+
+a.nav:visited{
+font-weight:bold;
+    color:#000000;
+    text-decoration:none;
+}
+
+a.nav:hover{
+    color:#B40404;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+a.nav:active{
+    color:#B40404;
+}
+
+/* sign up and login links*/
+a.loginLinks:link{
+    font-weight:bold;
+    color:#B40404;
+    text-decoration:none;
+}
+
+a.loginLinks:visited{
+font-weight:bold;
+    color:#B40404;
+    text-decoration:none;
+}
+
+a.loginLinks:hover{
+    color:#B40404;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+a.loginLinks:active{
+    color:#B40404;
+}
+
+/* links that aren't decorated'*/
+a.none:link{
+    text-decoration:none;
+    color:black;
+}
+
+a.none:visited{
+    text-decoration:none;
+    color:black;
+}
+
+a.none:hover{
+    text-decoration:none;
+    color:#B40404;
+}
+
+a.none:active{
+    text-decoration:none;
+}
+
+#calendar_event {
+    background:#B40404;
+}
+
+
+/* ADI */
+
+/*body {font-family:helvetica; font-size: 90%;} */
+#ArrowUp {
+            display:block;
+            background-image:url(../pictures/ArrowUp.jpg);
+            width:24px; height:12px;
+            border:0;
+        }
+#ArrowUp:hover {
+            background-image:url(../pictures/ArrowUpRollover.jpg);
+        }
+#ArrowDown {
+            display:block;
+            background-image:url(../pictures/ArrowDown.jpg);
+            width:24px; height:12px;
+            border:0;
+        }
+#ArrowDown:hover {
+            background-image:url(../pictures/ArrowDownRollover.jpg);
+        }
+A.adi:link {text-decoration: none; color:black;}
+A.adi:visited {text-decoration: none; color:black;}
+A.adi:active {text-decoration: none; color:#B40404}
+A.adi:hover {text-decoration:none; color:#B40404}
+
+#event_descr {
+    font-size:90%;
+    text-align: justify;
+}

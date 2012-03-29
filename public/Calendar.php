@@ -69,6 +69,7 @@ class Calendar {
             case "Sat": $blank = 6; break;
         }
 
+		define('CAL_GREGORIAN', 1); 
         //We then determine how many days are in the current month
         $days_in_month = cal_days_in_month(CAL_GREGORIAN, $month, $year) ;
 

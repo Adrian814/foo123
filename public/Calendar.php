@@ -9,15 +9,15 @@
  */
 class Calendar {
 
-	function cal_days_in_month($calendar, $month, $year) 
-	{ 
-	return date('t', mktime(0, 0, 0, $month, 1, $year)); 
-	} 
-
     function Calendar()
     {
 
     }
+
+	function cal_days_in_month($calendar, $month, $year) 
+	{ 
+	return date('t', mktime(0, 0, 0, $month, 1, $year)); 
+	}
 
     /**
      *

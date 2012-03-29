@@ -1,15 +1,5 @@
 <?php
 		
-		if (!function_exists('cal_days_in_month')) 
-		{ 
-		    function cal_days_in_month($calendar, $month, $year) 
-		    { 
-		        return date('t', mktime(0, 0, 0, $month, 1, $year)); 
-		    } 
-		} 
-		if (!defined('CAL_GREGORIAN')) 
-		    define('CAL_GREGORIAN', 1);
-		
         date_default_timezone_set('Europe/Paris');
 
         // check if params are set
@@ -52,7 +42,7 @@
         }
 
         //We then determine how many days are in the current month
-        $days_in_month = cal_days_in_month(CAL_GREGORIAN, $month, $year) ;
+        $days_in_month = date('t', mktime(0, 0, 0, $month+1, 0, $year));
 
         //Here we start building the table heads
         echo "<table border=1 width=294 style=empty-cells:show;>";

@@ -1,7 +1,11 @@
 <?php
 
+		function cal_days_in_month($calendar, $month, $year) 
+		{ 
+		return date('t', mktime(0, 0, 0, $month, 1, $year)); 
+		}
+		
         date_default_timezone_set('Europe/Paris');
-
 
         // check if params are set
         if(isset($_GET["month"]) && isset($_GET["year"]))

@@ -11,7 +11,7 @@
             exit; 
         }
         
-        $mysql = mysql_select_db('proj2009-siudaa');
+        $mysql = mysql_select_db('db_63bc86c9');
         //$mysql = mysql_select_db('phpmyadmin');
 
         if(!$mysql) {
